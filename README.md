@@ -18,6 +18,6 @@ This repository contains my learning journey in Data Structures and Algorithms w
 
 Here are the resources I am using for learning and problem-solving:
 
-- **[Tech Interview Handbook](https://www.techinterviewhandbook.org/)** - Learning plan
+- **[Tech Interview Handbook](https://www.techinterviewhandbook.org/algorithms/study-cheatsheet/)** - Learning plan
 - **[GeeksforGeeks](https://www.geeksforgeeks.org/)** - Theory and coding problems
 - **[LeetCode](https://leetcode.com/)** - Solving problems
