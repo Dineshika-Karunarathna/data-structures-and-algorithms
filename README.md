@@ -1,2 +1,23 @@
-# data-structures-and-algorithms
-My learning journey in Data Structures and Algorithms with practice problems and solutions
+# 📚 Data Structures and Algorithms
+This repository contains my learning journey in Data Structures and Algorithms with practice problems and solutions. Each folder contains problems along with explanations with different approaches.
+
+---
+
+## Topics Covered:
+-[Arrays](arrays/)
+
+
+
+## How to Use
+1. Clone this repository: `git clone https://github.com/dineshika-karunarathna/data-structures-and-algorithms.git`
+2. Navigate to a topic and explore the problems.
+3. Run the code to practice or understand the solutions.
+
+
+## Resources Used
+
+Here are the resources I am using for learning and problem-solving:
+
+- **[Tech Interview Handbook](https://www.techinterviewhandbook.org/)** - Learning plan
+- **[GeeksforGeeks](https://www.geeksforgeeks.org/)** - Theory and coding problems
+- **[LeetCode](https://leetcode.com/)** - Solving problems
