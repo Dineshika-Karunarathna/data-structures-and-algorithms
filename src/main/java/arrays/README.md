@@ -40,4 +40,5 @@ The problems solved in O(n^2) using loops, can be solved in O(n) or O(nlog(n)) b
 **Traversing the array more than once** : Traversing the array twice/thrice (as long as fewer than n times) is still O(n). Sometimes traversing the array more than once can help you solve the problem while keeping the time complexity to O(n).
 
 ## Problems
+- [TwoSum](TwoSum.java) (Problem: https://leetcode.com/problems/two-sum/description/)
 - []
