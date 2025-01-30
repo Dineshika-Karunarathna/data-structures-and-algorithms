@@ -35,10 +35,10 @@ The problems solved in O(n^2) using loops, can be solved in O(n) or O(nlog(n)) b
   - If condition doesn't match, shrink the window by increasing the left pointer.
   - When condition satisfies, again increase the right pointer.
 
-**Two pointers** : Similar to variable size sliding window with pointers can be crossed each other. 
-**Index as a hash key** : If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array itself as a hash table. 
-**Traversing the array more than once** : Traversing the array twice/thrice (as long as fewer than n times) is still O(n). Sometimes traversing the array more than once can help you solve the problem while keeping the time complexity to O(n).
+**Two pointers** : Similar to variable size sliding window with pointers can be crossed each other.   
+**Index as a hash key** : If you are given a sequence and the interviewer asks for O(1) space, it might be possible to use the array itself as a hash table.  
+**Traversing the array more than once** : Traversing the array twice/thrice (as long as fewer than n times) is still O(n). Sometimes traversing the array more than once can help you solve the problem while keeping the time complexity to O(n). 
 
 ## Problems
 - [TwoSum](TwoSum.java) (Problem: https://leetcode.com/problems/two-sum/description/)
-- []
+- [Best Time to Buy and Sell Stock](maxProfit.java) (Problem: https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)
