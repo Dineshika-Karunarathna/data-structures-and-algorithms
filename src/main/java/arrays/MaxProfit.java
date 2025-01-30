@@ -24,7 +24,6 @@ public class MaxProfit {
             if (currentPrice<minPrice){
                 minPrice = currentPrice;
             }
-            System.out.println("i="+i+" minPrice="+minPrice+" maxProfit="+maxProfit);
         }
         return maxProfit;
     }
