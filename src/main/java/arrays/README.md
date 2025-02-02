@@ -40,6 +40,13 @@ The problems solved in O(n^2) using loops, can be solved in O(n) or O(nlog(n)) b
 **Traversing the array more than once** : Traversing the array twice/thrice (as long as fewer than n times) is still O(n). Sometimes traversing the array more than once can help you solve the problem while keeping the time complexity to O(n). 
 
 ## Problems
-- TwoSum: ([Problem](https://leetcode.com/problems/two-sum/description/)) [Answer](TwoSum.java)
-- Best Time to Buy and Sell Stock: ([Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/)) [Answer](maxProfit.java)
-- Product of Array Except Self: [Problem](https://leetcode.com/problems/product-of-array-except-self/description/) [Answer](ProductOfArrayExceptSelf.java)
+- TwoSum: [Problem](https://leetcode.com/problems/two-sum/description/) | [Answer](TwoSum.java)  
+Approach: Use a hashmap to store complements
+- Best Time to Buy and Sell Stock: [Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [Answer](MaxProfit.java)   
+Approach: Maximum Profit can be achieved at minimum buying price and maximum selling price, where the buying day should be before selling day.
+- Product of Array Except Self: [Problem](https://leetcode.com/problems/product-of-array-except-self/description/) | [Answer](ProductOfArrayExceptSelf.java)  
+Approach: Traverse two times the array for opposite sides by multiplying one by one
+- Maximum Subarray: [Problem](https://leetcode.com/problems/maximum-subarray/description/) | [Answer](MaximumSubarray.java)  
+Approach: Kadane's algorithm is used to solve this problem. 
+It dynamically adjusts the current subarray (currentSum) and keeps track of the maximum sum seen so far (maxSum). 
+If adding the current number would reduce the sum, the algorithm "abandons" the current subarray and starts fresh from the current number.
