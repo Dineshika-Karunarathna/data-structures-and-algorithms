@@ -62,3 +62,10 @@ Approach: Use binary search by first determining which part (left or right) of t
 Approach: Sort the array first and use two-pointer technique. If the sum is less, increase the left pointer and when sum is more than zero, decrease the right pointer.
 9) **Container With Most Water**: [Problem](https://leetcode.com/problems/container-with-most-water/description/) | [Answer](ContainerWithMostWater.java)  
 Approach: Two pointer approach. Always move the pointer that points to the lower line.
+10) **Sliding Window Maximum**: [Problem](https://leetcode.com/problems/sliding-window-maximum/description/) | [Answer](SlidingWindowMaximum.java)  
+Approach: Use a Deque
+#### Deque
+- Deque(Double-Ended Queue) is a generalized form of Queue that allows insertion and removal from both ends(front and rear).
+- Insert & Remove from both ends (addFirst(), addLast(), removeFirst(), removeLast()). 
+- Time complexity O(1)
+- Implementations: ArrayDeque, LinkedList
