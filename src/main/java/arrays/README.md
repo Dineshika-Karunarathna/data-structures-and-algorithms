@@ -56,5 +56,7 @@ Approach: Use a HashSet because it only stores unique elements, so it automatica
   HashMap would store both the key (the number) and the value (often a constant, like 1). This leads to unnecessary storage of additional data that is not needed in this case.
 - Maximum Product Subarray: [Problem](https://leetcode.com/problems/maximum-product-subarray/description/) | [Answer](MaximumProductSubarray.java)  
 Approach: The algorithm tracks both the maximum and minimum products encountered so far to handle the effect of negative numbers, which can flip a negative product into a positive one. At each step, it updates the maxProduct and minProduct based on the current element, and keeps track of the highest product found in the result.
-- Search in Rotated Sorted Array: [Problem](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [Answer]()  
+- Search in Rotated Sorted Array: [Problem](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [Answer](SearchInRotatedSortedArray.java)  
 Approach: Use binary search by first determining which part (left or right) of the array is sorted. Depending on the target's value, we adjust the left and right pointers to search in the sorted half, ensuring the search space is reduced by half at each step.
+- 3Sum: [Problem](https://leetcode.com/problems/3sum/description/) | [Answer](ThreeSum.java)  
+Approach: Sort the array and use two-pointer technique. If the sum is less, increase the left pointer and when sum is more than zero, decrease the right pointer.
