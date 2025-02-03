@@ -50,7 +50,10 @@ Approach: Traverse two times the array for opposite sides by multiplying one by 
 Approach: Kadane's algorithm is used to solve this problem. 
 It dynamically adjusts the current subarray (currentSum) and keeps track of the maximum sum seen so far (maxSum). 
 If adding the current number would reduce the sum, the algorithm "abandons" the current subarray and starts fresh from the current number.
-- Contains Duplicate: [Problem](https://leetcode.com/problems/contains-duplicate/description/) | [Answer]()  
+- Contains Duplicate: [Problem](https://leetcode.com/problems/contains-duplicate/description/) | [Answer](ContainsDuplicate.java)  
 Approach: Use a HashSet because it only stores unique elements, so it automatically handles duplicates for us. The add() method returns false if the element is already in the set.
   A HashSet is designed to store unique elements only. It doesn’t store any additional information, such as values associated with keys. In this problem, we only care about whether a number is already seen, not about storing additional data with it.
   HashMap would store both the key (the number) and the value (often a constant, like 1). This leads to unnecessary storage of additional data that is not needed in this case.
+- Maximum Product Subarray: [Problem](https://leetcode.com/problems/maximum-product-subarray/description/) | [Answer](MaximumProductSubarray.java)  
+Approach: The algorithm tracks both the maximum and minimum products encountered so far to handle the effect of negative numbers, which can flip a negative product into a positive one. At each step, it updates the maxProduct and minProduct based on the current element, and keeps track of the highest product found in the result.
+- 
