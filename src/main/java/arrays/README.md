@@ -40,23 +40,25 @@ The problems solved in O(n^2) using loops, can be solved in O(n) or O(nlog(n)) b
 **Traversing the array more than once** : Traversing the array twice/thrice (as long as fewer than n times) is still O(n). Sometimes traversing the array more than once can help you solve the problem while keeping the time complexity to O(n). 
 
 ## Problems
-- TwoSum: [Problem](https://leetcode.com/problems/two-sum/description/) | [Answer](TwoSum.java)  
+1) **TwoSum**: [Problem](https://leetcode.com/problems/two-sum/description/) | [Answer](TwoSum.java)  
 Approach: Use a hashmap to store complements
-- Best Time to Buy and Sell Stock: [Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [Answer](MaxProfit.java)   
+2) **Best Time to Buy and Sell Stock**: [Problem](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/) | [Answer](MaxProfit.java)   
 Approach: Maximum Profit can be achieved at minimum buying price and maximum selling price, where the buying day should be before selling day.
-- Product of Array Except Self: [Problem](https://leetcode.com/problems/product-of-array-except-self/description/) | [Answer](ProductOfArrayExceptSelf.java)  
+3) **Product of Array Except Self**: [Problem](https://leetcode.com/problems/product-of-array-except-self/description/) | [Answer](ProductOfArrayExceptSelf.java)  
 Approach: Traverse two times the array for opposite sides by multiplying one by one
-- Maximum Subarray: [Problem](https://leetcode.com/problems/maximum-subarray/description/) | [Answer](MaximumSubarray.java)  
+4) **Maximum Subarray**: [Problem](https://leetcode.com/problems/maximum-subarray/description/) | [Answer](MaximumSubarray.java)  
 Approach: Kadane's algorithm is used to solve this problem. 
 It dynamically adjusts the current subarray (currentSum) and keeps track of the maximum sum seen so far (maxSum). 
 If adding the current number would reduce the sum, the algorithm "abandons" the current subarray and starts fresh from the current number.
-- Contains Duplicate: [Problem](https://leetcode.com/problems/contains-duplicate/description/) | [Answer](ContainsDuplicate.java)  
+5) **Contains Duplicate**: [Problem](https://leetcode.com/problems/contains-duplicate/description/) | [Answer](ContainsDuplicate.java)  
 Approach: Use a HashSet because it only stores unique elements, so it automatically handles duplicates for us. The add() method returns false if the element is already in the set.
   A HashSet is designed to store unique elements only. It doesn’t store any additional information, such as values associated with keys. In this problem, we only care about whether a number is already seen, not about storing additional data with it.
-  HashMap would store both the key (the number) and the value (often a constant, like 1). This leads to unnecessary storage of additional data that is not needed in this case.
-- Maximum Product Subarray: [Problem](https://leetcode.com/problems/maximum-product-subarray/description/) | [Answer](MaximumProductSubarray.java)  
-Approach: The algorithm tracks both the maximum and minimum products encountered so far to handle the effect of negative numbers, which can flip a negative product into a positive one. At each step, it updates the maxProduct and minProduct based on the current element, and keeps track of the highest product found in the result.
-- Search in Rotated Sorted Array: [Problem](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [Answer](SearchInRotatedSortedArray.java)  
-Approach: Use binary search by first determining which part (left or right) of the array is sorted. Depending on the target's value, we adjust the left and right pointers to search in the sorted half, ensuring the search space is reduced by half at each step.
-- 3Sum: [Problem](https://leetcode.com/problems/3sum/description/) | [Answer](ThreeSum.java)  
-Approach: Sort the array and use two-pointer technique. If the sum is less, increase the left pointer and when sum is more than zero, decrease the right pointer.
+  HashMap would store both the key (the number) and the value (often a constant, like 1). This leads to unnecessary storage of additional data that is not needed in this case. 
+6) **Maximum Product Subarray**: [Problem](https://leetcode.com/problems/maximum-product-subarray/description/) | [Answer](MaximumProductSubarray.java)  
+Approach: The algorithm tracks both the maximum and minimum products encountered so far to handle the effect of negative numbers, which can flip a negative product into a positive one. At each step, it updates the maxProduct and minProduct based on the current element, and keeps track of the highest product found in the result. 
+7) **Search in Rotated Sorted Array**: [Problem](https://leetcode.com/problems/search-in-rotated-sorted-array/description/) | [Answer](SearchInRotatedSortedArray.java)  
+Approach: Use binary search by first determining which part (left or right) of the array is sorted. Depending on the target's value, we adjust the left and right pointers to search in the sorted half, ensuring the search space is reduced by half at each step. 
+8) **3Sum**: [Problem](https://leetcode.com/problems/3sum/description/) | [Answer](ThreeSum.java)  
+Approach: Sort the array first and use two-pointer technique. If the sum is less, increase the left pointer and when sum is more than zero, decrease the right pointer.
+9) **Container With Most Water**: [Problem](https://leetcode.com/problems/container-with-most-water/description/) | [Answer](ContainerWithMostWater.java)  
+Approach: Two pointer approach. Always move the pointer that points to the lower line.
