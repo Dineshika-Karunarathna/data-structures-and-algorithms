@@ -4,7 +4,8 @@ This repository contains my learning journey in Data Structures and Algorithms w
 ---
 
 ## Topics Covered:
--[Arrays](src/main/java/arrays/)
+- [Arrays](src/main/java/arrays/)
+- [Strings](src/main/java/strings)
 
 
 
