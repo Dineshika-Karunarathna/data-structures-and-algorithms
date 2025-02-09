@@ -153,6 +153,8 @@ To check if a string is a palindrome:
 - Use two pointers starting from left and right and shift to the middle while comparing characters
 
 ## Problems
-1) **Valid Anagram**: [Problem](https://leetcode.com/problems/valid-anagram/description/) | [Answer]()  
-   Approach: 
-
+1) **Valid Anagram**: [Problem](https://leetcode.com/problems/valid-anagram/description/) | [Answer](ValidAnagram.java)  
+   Approach: If the lengths of two strings are different definitely they are not anagrams.  
+   Maintain a length 26 array for the alphabet and while traversing through the fist array add one for the index of each character.  
+   And then while traversing through the second array reduce one for each character.  
+   If all the elements of the alphabet array is zero, the strings are anagrams.
