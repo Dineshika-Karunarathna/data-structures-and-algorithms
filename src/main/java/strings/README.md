@@ -77,4 +77,82 @@ A Trie (Prefix Tree) is a tree-based data structure used to efficiently store an
 [Implementation of SuffixTree](SuffixTree.java)
 
 ### Rabin Karp 
-Efficient searching of substring using a rolling hash
+Best for multiple pattern searches and fast substring search using rolling hash.  
+Eg: text = AABACAADABA, pattern = ABA  
+Naive method: Compares the given pattern against all positions in the given text.   
+Worst Time Complexity: O(n*m), n: length of text, m: length of pattern  
+
+**How Rabin-Karp Works**
+- Compute the hash of the pattern (hash(P)) and the first window of text (hash(T)) of size m.
+- Slide over the text and compare hashes: 
+  - If hash matches, compare characters. 
+  - If hash doesn’t match, move to the next window.
+  - To calculate the new hash value, Remove the contribution from the outgoing character and add the contribution of the incoming character 
+
+
+To reduce hash collisions, take a strong rolling hash formula such that the patterns don't match easily.  
+![img_2.png](img_2.png)
+
+c_i → Character values (e.g., ASCII values).  
+b → Base value (commonly 256 for ASCII).  
+n → Length of the substring.  
+p → Prime modulus (prevents overflow and reduces collisions).  
+
+Time Complexity(Average): O(n+m)  
+Time Complexity(Worst): O(n*m)  
+Space Complexity: O(1)
+
+[Rabin Karp Implementation](RollingHash.java)
+
+### KMP(Knuth-Morris-Pratt) Algorithm
+Efficient substring search algorithm that avoids redundant comparisons using preprocessing(Single pattern search).  
+
+**How KMP Works**
+- Precompute the LPS (Longest Prefix Suffix) array:
+  - LPS[i] stores the longest proper prefix which is also a suffix. 
+  - Helps to determine how much to skip when a mismatch occurs. 
+- Search efficiently using LPS:
+  - Instead of resetting comparisons, move to a previously matched prefix.
+
+Time Complexity: O(n+m)  
+Space Complexity: O(m)  
+[KMP Implementation](KMP.java)
+
+### Techniques
+
+#### Counting characters
+To count the frequency of characters in a string, use a hash table/map.  
+For a counter of a string of lowercase latin characters is O(1) not O(n) as it is a fixed content of 26.
+
+#### String of unique characters
+To count the characters in a string of unique characters is to use a 26-bit bitmask to indicate which lower case latin characters are inside the string.
+
+mask = 0  
+for c in word:  
+  mask |= (1 << (ord(c) - ord('a')))  
+
+To determine if two strings have common characters, perform & on the two bitmasks.    
+If two words share at least one character, their bitmasks will have a common 1 bit (maskA & maskB > 0).
+
+#### Anagram
+An anagram is a word or phrase formed by rearranging the letters of another word or phrase, using all the original letters exactly once.   
+To check if two words are anagrams:
+- Result from sorting both strings should be equal.   
+Time Complexity: O(nlog n), Space Complexity: O(log n)  
+[Sorting-based Approach](AnagramChecker1.java)
+- If we map each character to a prime number, and we multiply each mapped number together, anagrams should have the same multiple (prime factor decomposition).   
+Time Complexity: O(n), Space Complexity: O(1)
+- Frequency counting of characters will help to determine if two strings are anagrams.  
+Time Complexity: O(n), Space Complexity: O(1)  
+[Frequency-Count Approach](AnagramChecker2.java)
+
+#### Palindrome
+Sequence that reads the same forward and backward.  
+To check if a string is a palindrome:
+- Reverse the string and it should be same
+- Use two pointers starting from left and right and shift to the middle while comparing characters
+
+## Problems
+1) **Valid Anagram**: [Problem](https://leetcode.com/problems/valid-anagram/description/) | [Answer]()  
+   Approach: 
+
