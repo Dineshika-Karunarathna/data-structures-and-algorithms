@@ -3,7 +3,8 @@ package strings;
 public class ValidAnagram {
     /* Leetcode Problem 242
     Given two strings s and t, return true if t is an anagram of s, and false otherwise.
-
+    Time Complexity: O(n)
+    Space Complaexity: O(1)
 
      */
     public static boolean isAnagram(String s, String t) {

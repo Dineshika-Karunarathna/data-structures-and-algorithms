@@ -158,3 +158,6 @@ To check if a string is a palindrome:
    Maintain a length 26 array for the alphabet and while traversing through the fist array add one for the index of each character.  
    And then while traversing through the second array reduce one for each character.  
    If all the elements of the alphabet array is zero, the strings are anagrams.
+2) **Valid Palindrome**: [Problem](https://leetcode.com/problems/valid-palindrome/description/) | [Answer]()
+   Approach: Use two-pointer approach. While traversing through the string skip the non-alphanumeric characters and compare the characters by lowercasing. 
+3) 
